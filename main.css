@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 20000px;
+}
+hr{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 5px;
+    justify-content: center
+    
+}
+.product {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius:20px;
+  overflow: hidden;
+ 
+  img {
+    width: inherit;
+    height: inherit;
+  }
+  .cover {
+    width: inherit;
+    height: inherit;
+    background-color: #2b2b2bbb;
+    position: absolute;
+    bottom: -100%;
+    left: -100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 800ms;
+    border-radius: 20px;
+
+
+   
+    h1 {
+      text-align: center;
+      color: whitesmoke;
+      font-size: 40px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: whitesmoke;
+      font-size: 30px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      width: 120px;
+      height: 35px;
+      background-color: green;
+      text-align: center;
+      line-height: 30px;
+      text-transform: capitalize;
+      color: whitesmoke;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      margin: 10px auto;
+      transition: 300ms;
+      &:hover {
+        background-color: deeppink;
+      }
+    }
+  }
+  &:hover .cover {
+   bottom: 0px;
+   left: 0px;
+  }
+}
+.header{
+    width: 100%;
+    position: sticky;
+    top:0px;
+    .head{
+        direction: rtl;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around ;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(0, 11, 76);
+        .adrress{
+            color: whitesmoke;
+            font-size: 25px;
+        }
+        .bottom{
+            a{
+                text-decoration: none;
+                color: rgb(178, 178, 178);
+                border-radius: 10px;
+                background-color: #3b3b3bbb;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+
+    }
+    .menu{
+        width: 100%;
+        height: 90px;
+        background-color: rgb(244, 244, 244);
+    }
+}
+
